@@ -1,0 +1,15 @@
+size=int(input("Enter the Number of Objects to be Stored in List:"))
+inp_string=[]
+for _ in range(size):
+    string=int(input("Enter \n1 For insert String/Name:\n2 For Digit :\n"))
+    if string==2:
+        inp_string.append(int(input("Enter Digit :")))
+    else:
+        inp_string.append(input("Enter the Names or Things name: "))
+print("Your Entered List:",inp_string)    
+
+for i in inp_string:
+    if type(i) is str:
+        print(f"Index {inp_string.index(i)} Contains String Part:\n")
+    else:
+        print(f"Index {inp_string.index(i)} Contains Integer Part\n")    
